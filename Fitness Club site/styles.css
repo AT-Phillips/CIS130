@@ -1,10 +1,13 @@
-/*Austin Phillips, 6/25/23, "Fitness Club", styles.css*/
+/*Austin Phillips, 6/26/23, "Fitness Club", styles.css*/
 body {
     font-family: Arial, sans-serif;
-    color: #000000;
+    color: #f1e3e3;
     background-color: #ffffff;
     margin: 0;
     padding: 0;
+    background-image: url('weight_rack.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 h1 {
@@ -22,6 +25,7 @@ h2 {
     margin: 0 auto;
 }
 
+/* _unused block, may reconsider_
 blank image {
     max-width: 50%;
     height: auto;
@@ -30,14 +34,17 @@ blank image {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     padding: 10px;
-}
+}*/
 
 footer {
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 0px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 0;
 }
 
 .footer-text {
@@ -54,28 +61,14 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    padding: 5px;
-}
-
-nav a:hover {
-    background-color: #293d7e;
+    padding: 10px;
     color: #fff;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-}
-
-.gallery img {
-    max-width: 90%;
-    height: auto;
-    border-radius: 10%;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
-    justify-items: center;
-    z-index: 1;
+nav a:hover {
+    background-color: #297e52;
+    color: #fff;
+    border-radius: 4px;
 }
 
 table {
@@ -91,7 +84,7 @@ table td {
 }
 
 table th {
-    background-color: #f2f2f2;
+    background-color: #297e52;
     font-weight: bold;
     border-bottom: 2px solid #ddd;
 }
@@ -112,17 +105,17 @@ table tbody td:first-child {
     font-weight: bold;
 }
 
-/* Class colors go here */
+/* Color designations for the different classes go here */
 table tbody td.class1 {
-    background-color: #ffc0cb;
+    background-color: #871528;
 }
 
 table tbody td.class2 {
-    background-color: #add8e6;
+    background-color: #115c76;
 }
 
 table tbody td.class3 {
-    background-color: #90ee90;
+    background-color: #0e5b0e;
 }
 
 h1 {
