@@ -2,13 +2,14 @@
 <html lang="en-US">
 
 <head>
+    <!--Austin Phillips, 6/26/23, "Registration Form", index.html-->
     <title>Advising Appointment Registration</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
     <h1>Advising Appointment Registration</h1>
-    <form id="registration-form" action="thankyou.html" method="post">
+    <form action="thankyou.html" method="get">
         <div class="form-group">
             <label for="first-name">First Name:</label>
             <input type="text" id="first-name" name="first-name" required>
@@ -35,7 +36,15 @@
                 <option value="January">January</option>
                 <option value="February">February</option>
                 <option value="March">March</option>
-                <!-- ...and so on for the other months... -->
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
             </select>
         </div>
         <div class="form-group">
@@ -53,13 +62,18 @@
         </div>
         <div class="form-group">
             <label>Classes:</label>
-            <label for="class1">
-                <input type="checkbox" id="class1" name="classes[]" value="Class 1"> Class 1
+            <label for="CIS130">
+                <input type="checkbox" id="CIS130" name="classes[CIS130]" value="CIS130"> CIS130
             </label>
-            <label for="class2">
-                <input type="checkbox" id="class2" name="classes[]" value="Class 2"> Class 2
+            <label for="CIS140">
+                <input type="checkbox" id="CIS140" name="classes[CIS140]" value="CIS140"> CIS140
             </label>
-            <!-- ...and so on for the other classes... -->
+            <label for="CIS170">
+                <input type="checkbox" id="CIS170" name="classes[CIS170]" value="CIS170"> CIS170
+            </label>
+            <label for="CIS205">
+                <input type="checkbox" id="CIS205" name="classes[CIS205]" value="CIS205"> CIS205
+            </label>
         </div>
         <div class="form-group">
             <label for="notes">Additional Notes:</label>

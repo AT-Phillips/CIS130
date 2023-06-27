@@ -1,6 +1,10 @@
+/*Austin Phillips, 6/26/23, "Registration Form", styles.css*/
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(187, 187, 205, 0.5);
 }
 
 h1 {
