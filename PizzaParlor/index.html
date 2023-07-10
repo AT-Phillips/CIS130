@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!--Austin Phillips, 7/10/23, "Pizza Parlor", index.html-->
+    <meta charset="utf-8" />
+    <title>
+        Home
+    </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body id="index">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="column">
+            <form>
+                <div class="form-group">
+                    <label for="first-name">Customer First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Customer Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Customer Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pizza-type">Pizza Choice:</label>
+                    <select id="pizza-type" name="pizza-type" required>
+                        <option value="">Select Pizza</option>
+                        <option value="margherita">Margherita</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="hawaiian">Hawaiian</option>
+                        <option value="meat-lovers">Meat Lovers</option>
+                        <option value="supreme">Supreme</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Number of Pizzas:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Place Order" class="submit-btn">
+                </div>
+            </form>
+        </div>
+
+        <div class="column">
+            <div class="form-group">
+                <label for="testimonial">Customer Testimonial:</label>
+                <textarea id="testimonial" name="testimonial"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Follow Us:</label>
+                <div>
+                    <a href="#"><img src="social-media-icon-1.png" alt="Facebook"></a>
+                    <a href="#"><img src="social-media-icon-2.png" alt="Twitter"></a>
+                    <a href="#"><img src="social-media-icon-3.png" alt="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Extra content goes here...</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
