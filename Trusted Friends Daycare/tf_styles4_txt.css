@@ -45,7 +45,7 @@ section#tips {
    display: -webkit-flex;
    display: flex;
 
-   -wedkit-flex-direction: row wrap;
+   -webkit-flex-direction: row wrap;
    flex-flow: row wrap;
 }
 
