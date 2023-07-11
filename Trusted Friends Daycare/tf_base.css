@@ -17,15 +17,50 @@
 
 /* Basic styles to be used with all devices and under all conditions */
 
-article, aside, figcaption, figure,
-footer, header, main, nav, section { 
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
    display: block;
 }
 
-address, article, aside, blockquote, body, cite, 
-div, dl, dt, dd, em, figcaption, figure, footer, 
-h1, h2, h3, h4, h5, h6, header, html, img, 
-li, main, nav, nav a, ol, p, section, span, ul {
+address,
+article,
+aside,
+blockquote,
+body,
+cite,
+div,
+dl,
+dt,
+dd,
+em,
+figcaption,
+figure,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+li,
+main,
+nav,
+nav a,
+ol,
+p,
+section,
+span,
+ul {
    margin: 0;
    padding: 0;
    border: 0;
@@ -34,7 +69,7 @@ li, main, nav, nav a, ol, p, section, span, ul {
    background: transparent;
    -webkit-box-sizing: border-box;
    -moz-box-sizing: border-box;
-   box-sizing: border-box;  
+   box-sizing: border-box;
 }
 
 
@@ -44,7 +79,8 @@ body {
    line-height: 1.2em;
 }
 
-ul, ol {
+ul,
+ol {
    list-style: none;
 }
 
@@ -56,4 +92,3 @@ nav ul {
 nav a {
    text-decoration: none;
 }
-
