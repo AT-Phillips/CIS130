@@ -7,7 +7,7 @@ body {
     background-image: url('pebbles.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat
+    /*background-repeat: no-repeat;*/
 }
 
 header {
