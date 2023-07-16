@@ -1,7 +1,13 @@
-body,
-ul {
+body {
+    font-family: Arial, sans-serif;
+    color: #f1e3e3;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
+    background-image: url('pebbles.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
 }
 
 header {
@@ -9,18 +15,18 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #484a29;
 }
 
 .logo {
     font-weight: bold;
-    color: #306e91;
+    color: #4092c5;
 }
 
 .store-hours {
     margin-right: auto;
     margin-left: 20px;
-    color: #306e91;
+    color: #4092c5;
 }
 
 nav ul {
@@ -34,7 +40,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #306e91;
+    color: #4092c5;
 }
 
 .social-media a {
@@ -43,11 +49,9 @@ nav ul li a {
 
 main {
     padding: 20px;
-    background-image: url("pebbles.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     color: #6bfb9d;
 }
+
 
 h1 {
     font-size: 32px;
