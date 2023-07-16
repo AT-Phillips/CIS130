@@ -1,0 +1,135 @@
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.logo {
+    font-weight: bold;
+    color: #306e91;
+}
+
+.store-hours {
+    margin-right: auto;
+    margin-left: 20px;
+    color: #306e91;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #306e91;
+}
+
+.social-media a {
+    margin-left: 10px;
+}
+
+main {
+    padding: 20px;
+    background-image: url("pebbles.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #6bfb9d;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #32358e;
+    color: #6bfb9d;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 568px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        flex-basis: 100%;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+.column {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .store-hours {
+        margin: 0 20px;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    .column {
+        display: block;
+        margin-bottom: 30px;
+        width: 50%;
+    }
+
+    .column h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        width: 50%;
+    }
+
+
+
+    @media screen and (max-width: 1024px) {
+
+        main {
+            padding: 50px;
+        }
+
+        .column {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column ul {
+            flex: 1;
+        }
+
+        footer {
+            position: static;
+        }
+    }
+}
