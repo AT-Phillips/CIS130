@@ -1,13 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    color: #f1e3e3;
+    color: #ffffff;
     background-color: #ffffff;
     margin: 0;
     padding: 0;
-    background-image: url('pebbles.jpg');
+    /*background-image: url('pebbles.jpg');*/
     background-size: cover;
     background-position: center;
     /*background-repeat: no-repeat;*/
+}
+
+body.index {
+    background-image: url('bigfish.webp');
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    color: #336645;
+}
+
+body.products {
+    background-image: url('bait.webp');
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    color: #000000;
 }
 
 header {
@@ -15,18 +29,20 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #484a29;
+    background-color: #ffffff;
+    color: #336645;
 }
 
 .logo {
     font-weight: bold;
-    color: #4092c5;
+    font-size:x-large
 }
 
 .store-hours {
     margin-right: auto;
     margin-left: 20px;
-    color: #4092c5;
+    color: #336645;
+    text-decoration: underline;
 }
 
 nav ul {
@@ -40,18 +56,39 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #4092c5;
+    color: #336645;
+}
+
+.fa {
+    padding: 13px;
+    font-size: 10px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
 }
 
 .social-media a {
     margin-left: 10px;
 }
 
-main {
-    padding: 20px;
-    color: #6bfb9d;
+.fa-facebook {
+    background: #3B5998;
+    color: white;
 }
 
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #55ACEE;
+    color: rgb(143, 13, 54);
+}
 
 h1 {
     font-size: 32px;
@@ -59,14 +96,15 @@ h1 {
 }
 
 footer {
-    background-color: #32358e;
-    color: #6bfb9d;
+    background-color: #1860b3;
+    color: #c7e1d0;
     text-align: center;
-    padding: 10px;
+    padding: 1px;
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 568px) {
@@ -86,6 +124,10 @@ footer {
 
 .column {
     width: 100%;
+}
+
+footer {
+    position: fixed;
 }
 
 @media screen and (max-width: 768px) {
@@ -115,7 +157,9 @@ footer {
         width: 50%;
     }
 
-
+    footer {
+        position: fixed;
+    }
 
     @media screen and (max-width: 1024px) {
 
@@ -133,7 +177,7 @@ footer {
         }
 
         footer {
-            position: static;
+            position: fixed;
         }
     }
 }
