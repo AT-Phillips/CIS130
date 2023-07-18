@@ -35,7 +35,7 @@ header {
 
 .logo {
     font-weight: bold;
-    font-size:x-large
+    font-size: x-large;
 }
 
 .store-hours {
@@ -108,15 +108,12 @@ footer {
 }
 
 @media screen and (max-width: 568px) {
-
     nav {
         flex-direction: column;
     }
-
     .menu-item {
         flex-basis: 100%;
     }
-
     main {
         padding: 10px;
     }
@@ -131,53 +128,65 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
     header {
         flex-direction: column;
         align-items: center;
     }
-
     .store-hours {
         margin: 0 20px;
     }
-
     main {
         padding: 30px;
     }
-
     .column {
         display: block;
         margin-bottom: 30px;
         width: 50%;
     }
-
     .column h2 {
         font-size: 24px;
         margin-bottom: 10px;
         width: 50%;
     }
-
     footer {
         position: fixed;
     }
+}
 
-    @media screen and (max-width: 1024px) {
-
-        main {
-            padding: 50px;
-        }
-
-        .column {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .column ul {
-            flex: 1;
-        }
-
-        footer {
-            position: fixed;
-        }
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 50px;
     }
+    .column {
+        display: flex;
+        justify-content: space-between;
+    }
+    .column ul {
+        flex: 1;
+    }
+    footer {
+        position: fixed;
+    }
+}
+
+main {
+    position: relative;
+}
+
+.bait {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.bait:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    border: 1px solid #000000;
+    z-index: -1;
+    background-color: rgba(31, 154, 44, 0.8);
+
 }
