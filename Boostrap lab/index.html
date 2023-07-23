@@ -41,18 +41,40 @@
 
     </div>
     <div class="container heading">
-        <p onclick=alert(myName)>
+        <!--<p onclick=alert(myName)>
             Click me!
-        </p>
-        <button type="button" class="btn btn-primary">Primary</button>
+        </p> -->
+        <button id="userName" type="button" class="btn btn-primary" onclick=alert("Hello")>Say Hello</button>
+        <script>
+            // var newName = prompt("What is your user name?")
+            // console.log(newName);
+            // document.getElementById("userName").innerHTML = "Say Hello " + newName;
+        </script>
+    </div>
+
+    <div class="container heading">
+        <div class="card">
+            <figure class="figure">
+            <img src="images/dog1.jpg" class="card-img-top" alt="Cute Corgi" id="theImg">
+            <script>
+                    var dogAlt = document.getElementById("theImg").alt;
+                    console.log(dogAlt);
+            </script>
+            <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            </figure>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary" onclick="document.getElementById('theImg').src = 'images/dog2.jpg' ">Go somewhere</a>
+            </div>
+        </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
