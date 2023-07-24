@@ -1,0 +1,18 @@
+﻿body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: purple;
+}
+
+img {
+    float: left;
+    margin-right: 15px;
+    width: 200px;
+    height: auto;
+}
+
+.center {
+    text-align: center;
+}
