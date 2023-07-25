@@ -1,8 +1,12 @@
-/* Custom styles for the Bed and Breakfast site */
-
 /* Navbar */
 .navbar {
     padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-weight: 600;
+    color: #2a308a;
 }
 
 /* Carousel */
