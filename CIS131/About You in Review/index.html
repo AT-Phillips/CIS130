@@ -24,8 +24,32 @@
     <h2>A little about me.</h2>
     <p>
         My name is Austin Phillips and I live here in Springfield, MO. I'm taking
-        classes to get my Associate's in Computer Information Science.
+        classes to get my Associate's in Computer Information Science and it's 
+        been an fascinating journey so far.
     </p>
+
+    <form class="form">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="bestWayToReach">Best way to reach:</label>
+        <select id="bestWayToReach" name="bestWayToReach">
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
     <footer>
         <p><strong>&copy; Austin Phillips 2023</strong></p>
     </footer>
