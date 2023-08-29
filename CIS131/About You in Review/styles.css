@@ -1,18 +1,23 @@
 /*Austin Phillips, 23/FA-CIS-131-W01, 8/28/23, "About You in Review", styles.css*/
 body {
-    font-family: Arial, sans-serif;
-    color: #000000;
-    background-color: #ffffff;
+    font-family: Garamond, sans-serif;
+    color: #d5d5d5;
+    background-color: #2b473d;
     margin: 5;
     padding: 5;
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
+    font-size: 2.5em;
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
+}
+
+p, li {
+    font-size: 1.3em;
 }
 
 .container {
@@ -24,14 +29,9 @@ h2 {
 
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     padding: 0;
     list-style-type: none;
-}
-
-nav a {
-    text-decoration: none;
-    padding: 5px;
 }
 
 nav a:hover {
@@ -39,11 +39,43 @@ nav a:hover {
     color: #fff;
 }
 
+nav a {
+    position: relative;
+    padding: 5px;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    color: #d5d5d5;
+}
+
+nav a:hover {
+    background-color: #1860b3;
+    color: #6db878;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
 form {
-    background-color: #6db878;
+    background-color: #1860b3;
     padding: 3px;
     margin: 0;
     justify-content: center;
+    display: inline-block;
+    bottom: 0;
+    width: 18%;
+    padding: 20px;
 }
 
 footer {
