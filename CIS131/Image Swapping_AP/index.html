@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="image-container">
+        <img id="large-image" src="image1.jpg" alt="Large Image">
+    </div>
+    <div class="thumbnail-container">
+        <img src="brown-aussie.jpg" alt="Thumbnail 1" onclick="changeImage(this)">
+        <img src="german-shepherd.jpg" alt="Thumbnail 2" onclick="changeImage(this)">
+        <img src="golden-retriever.jpg" alt="Thumbnail 3" onclick="changeImage(this)">
+        <img src="husky.jpg" alt="Thumbnail 4" onclick="changeImage(this)">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
