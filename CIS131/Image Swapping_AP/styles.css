@@ -23,3 +23,10 @@ h1 {
     height: auto;
     cursor: pointer;
 }
+
+#large-image {
+    max-width: 80%;
+    max-height: 60vh;
+    display: block;
+    margin: 0 auto;
+}
