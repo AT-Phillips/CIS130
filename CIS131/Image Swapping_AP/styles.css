@@ -1,6 +1,9 @@
+/*Austin Phillips, 23/FA-CIS-131-W01, 9/06/23, "Image Swapping", styles.css*/
 body {
     text-align: center;
     font-family: Arial, sans-serif;
+    color: #ced1de;
+    background-color: #488972;
 }
 
 h1 {
@@ -24,6 +27,7 @@ h1 {
     cursor: pointer;
 }
 
+/*This controls the size of the "large image that is in the center of the page*/
 #large-image {
     max-width: 80%;
     max-height: 60vh;
