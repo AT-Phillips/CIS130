@@ -1,10 +1,10 @@
 //Austin Phillips, 23/FA-CIS-131-W01, 10/16/23, "Rocket Launch Project", scripts.js
 
 //Fetch and display data from API endpoint
-function fetchData(apiEndpoint, displayFunction, dataContainer) {
+function fetchData("https://lldev.thespacedevs.com/2.2.0/launch/upcoming/?search=SpaceX", displayFunction, dataContainer) {
     const xhr = new XMLHttpRequest();
 
-    // Callback function to handle the response from the API request
+    //Callback function to handle the response from the API request
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
@@ -32,8 +32,7 @@ function displayAstronautData(astronauts, dataContainer) {
         astronautInfo.innerHTML = `
             <strong>Name:</strong> ${astronaut.name}<br>
             <img src="${astronaut.image}" alt="Astronaut Image" width="100"><br>
-            <strong>Bio:</strong> ${astronaut.bio}<br><br>
-        `;
+            <strong>Bio:</strong> ${astronaut.bio}<br><br>`;
         dataContainer.appendChild(astronautInfo);
     }
 }
@@ -49,8 +48,7 @@ function displayLaunchData(launches, dataContainer) {
         launchInfo.innerHTML = `
             <strong>Name:</strong> ${launch.mission_name}<br>
             <strong>Location:</strong> ${launch.launch_site.site_name_long}<br>
-            <strong>Date:</strong> ${new Date(launch.launch_date_utc).toLocaleString()}<br><br>
-        `;
+            <strong>Date:</strong> ${new Date(launch.launch_date_utc).toLocaleString()}<br><br>`;
         dataContainer.appendChild(launchInfo);
     }
 }
@@ -63,6 +61,6 @@ function fetchAstronautData() {
 
 //Fetch and display launch data
 function fetchLaunchData() {
-    const apiUrl = 'LAUNCH_API_ENDPOINT';
+    const apiUrl = 'https://lldev.thespacedevs.com/2.2.0/launch/upcoming/?search=SpaceX';
     fetchData(apiUrl, displayLaunchData, launchDataContainer);
 }
